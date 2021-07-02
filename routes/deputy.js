@@ -3,12 +3,12 @@ const router = express.Router();
 const Deputy = require("../models/Deputy.model");
 
 router.get("/deputies", async (req, res) => {
-    const deputies = await Deputy.find().sort({ name: 1 }).populate("party");
+    const deputies = await Deputy.find();
     res.render("deputies/deputies-list", { deputies });
   });
   
 router.get("/deputies/:deputyId", async (req, res) => {
-  const deputyDetail = await Deputy.findById(req.params.deputyId).populate("party");
+  const deputyDetail = await Deputy.findById(req.params.deputyId);
   res.render("deputies/deputy-detail", deputyDetail);
 });
 

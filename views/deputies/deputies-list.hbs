@@ -1,22 +1,33 @@
-<h2>Deputies List</h2>
-
-<h1>Books list</h1>
+<h1>Deputies List</h1>
 {{#each deputies}}
-  <div>
-    <a href="/deputies/{{_id}}">
-      {{title}}
-    </a>
-        <a href="/deputies/{{_id}}">
-      {{title}}
-    </a>
-    <p>By: {{author.name}}</p>
-    <form action="/deputies/{{_id}}/delete" method="POST">
-      <button type="submit">Delete</button>
-    </form>
-  </div>
+<div>
+  <h3> Name:</h3><a href="/deputies/{{_id}}">
+    {{name}}
+  </a>
   <br><br>
-  {{#if image_url}}
-  <img src="{{image_url}}" alt="">
-  {{/if}}
+  <h3> Name:</h3><a href="/deputies/{{party}}">{{party}}</a>
+  <br><br>
+  <h3> Name:</h3>
+  <form action="/deputies/{{_id}}/delete" method="POST">
+    <button type="submit">Delete</button>
+  </form>
+</div>
+<br><br>
+{{#if image_url}}
+<img src="{{image_url}}" alt="">
+{{/if}}
+
+
+shortname: String,
+slug: String,
+name: String,
+gender: String,
+party: String,
+active: Boolean,
+birthdate: String,
+occupation: String,
+occupation2: String,
+url_parlamento: String,
+image_url: String,
 
 {{/each}}
