@@ -1,7 +1,6 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: black;
 }
 
 a {
@@ -9,11 +8,23 @@ a {
 }
 
 h1 {
-  color: red!important;
+
 }
 
 .mobile-frame {
   display: block;
   border: 1.334vh solid #111;
   border-radius: 4.5vh;
+  padding: 0;
+  background-color: black;
+}
+
+.bt1 {
+  border: 0.1vh solid #111;
+  border-top-left-radius: 4.5vh;
+}
+
+.bt4 {
+  border: 0.1vh solid #111;
+  border-top-right-radius: 4.5vh;
 }
