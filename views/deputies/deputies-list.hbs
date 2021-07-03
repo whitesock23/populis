@@ -1,33 +1,19 @@
-<h1>Deputies List</h1>
-{{#each deputies}}
-<div>
-  <h3> Name:</h3><a href="/deputies/{{_id}}">
-    {{name}}
-  </a>
-  <br><br>
-  <h3> Name:</h3><a href="/deputies/{{party}}">{{party}}</a>
-  <br><br>
-  <h3> Name:</h3>
-  <form action="/deputies/{{_id}}/delete" method="POST">
-    <button type="submit">Delete</button>
-  </form>
+<div class="col-md-4">
+  <div class="mobile-frame">
+    <h1>Deputies List</h1>
+    {{#each deputies}}
+    <div class="col">
+      <div class="card h-100">
+        <img src="{{image_url}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{name}}</h5>
+          <p class="card-text">{{party}}</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">{{birthdate}}</small>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
 </div>
-<br><br>
-{{#if image_url}}
-<img src="{{image_url}}" alt="">
-{{/if}}
-
-
-shortname: String,
-slug: String,
-name: String,
-gender: String,
-party: String,
-active: Boolean,
-birthdate: String,
-occupation: String,
-occupation2: String,
-url_parlamento: String,
-image_url: String,
-
-{{/each}}
