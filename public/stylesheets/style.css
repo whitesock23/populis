@@ -52,6 +52,6 @@ button.btn {
   display: none;
 }
 
-/* news layout */
-
-
+hr {
+	border-top: 1px solid red;
+  }
