@@ -10,21 +10,48 @@ a {
 h1 {
 
 }
-
+@media (min-width: 376px) {
 .mobile-frame {
   display: block;
   border: 1.334vh solid #111;
   border-radius: 4.5vh;
-  padding: 0;
   background-color: black;
 }
-
-.bt1 {
-  border: 0.1vh solid #111;
-  border-top-left-radius: 4.5vh;
 }
 
-.bt4 {
-  border: 0.1vh solid #111;
-  border-top-right-radius: 4.5vh;
+.voting-body {
+  background-image: url(/images/ballot.jpeg);
+  background-size: cover;
+  height: 660px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
+
+.btn-primary {
+  color: #fff;
+  background-color: inherit;
+  border-color: transparent;
+}
+
+.d-flex {
+    justify-content: space-around;
+}
+
+@media (max-width: 375px) {
+button.btn {
+  font-size: 10px;
+}
+
+.d-flex {
+  justify-content: center;
+}
+}
+
+.card-img-hidden {
+  display: none;
+}
+
+/* news layout */
+
+

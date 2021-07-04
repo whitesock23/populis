@@ -2,8 +2,8 @@ const express = require("express");
 const router = express.Router();
 const Deputy = require("../models/Deputy.model");
 
-router.get("/voting", (req, res) => {
-      res.render("voting");
+router.get("/news", (req, res) => {
+      res.render("news");
     });
 
 module.exports = router;

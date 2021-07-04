@@ -1,15 +1,18 @@
-
-    {{#each deputies}}
-    <div class="col">
-      <div class="card h-100">
-        <img src="{{image_url}}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">{{name}}</h5>
-          <p class="card-text">{{party}}</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">{{birthdate}}</small>
-        </div>
-      </div>
+{{#each deputies}}
+<div class="col">
+  <div class="card h-100">
+    {{#if image_url}}
+    <img src="{{image_url}}" class="card-img-top" alt="..."/>
+    {{else}}
+    <img class="card-img-hidden" src="{{image_url}}" class="card-img-top" alt="..."/>
+    {{/if}}
+    <div class="card-body">
+      <h5 class="card-title">Nome: {{name}}</h5>
+      <p class="card-text">Partido: {{party}}</p>
     </div>
-    {{/each}}
+    <div class="card-footer">
+      <small class="text-muted">Data de Nascimento: {{birthdate}}</small>
+    </div>
+  </div>
+</div>
+{{/each}}

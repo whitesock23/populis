@@ -33,7 +33,10 @@ const deputies = require("./routes/deputy");
 app.use("/", deputies);
 
 const voting = require("./routes/voting");
-app.use("/", deputies);
+app.use("/", voting);
+
+const news = require("./routes/news");
+app.use("/", news);
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);

@@ -14,9 +14,9 @@ const Deputy = require("../models/Deputy.model");
 
 // https://codeforgeek.com/handle-get-post-request-express-4/
 
-router.get("/deputies", async (req, res, next) => {
+router.get("/deputies", async (req, res) => {
   try {
-    const deputies = await Deputy.find();
+    const deputies = await Deputy.find()
     res.render("deputies/deputies-list", { deputies });
   }
   catch(err) {
