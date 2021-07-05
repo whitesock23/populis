@@ -1,4 +1,4 @@
-{{#each deputies}}
+{{#each deputies.Legislatura.Deputados.pt_ar_wsgode_objectos_DadosDeputadoSearch}}
 <div class="col">
   <div class="card h-100">
     {{#if image_url}}
@@ -7,11 +7,11 @@
     <img class="card-img-hidden" src="{{image_url}}" class="card-img-top" alt="..."/>
     {{/if}}
     <div class="card-body">
-      <h5 class="card-title">Nome: {{name}}</h5>
-      <p class="card-text">Partido: {{this.party}}</p>
+      <h5 class="card-title">Nome: {{depNomeCompleto}}</h5>
+      <p class="card-text">Partido: {{depGP.pt_ar_wsgode_objectos_DadosSituacaoGP.gpSigla}}</p>
     </div>
     <div class="card-footer">
-      <small class="text-muted">Data de Nascimento: {{this.birthdate}}</small>
+      <small class="text-muted">Circulo Eleitoral: {{depCPDes}}</small>
     </div>
   </div>
 </div>

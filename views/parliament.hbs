@@ -1,0 +1,16 @@
+<h1>Parlamento</h1>
+<h2>Grupos parlamentares</h2>
+
+{{#each parliament.Legislatura.GruposParlamentares.pt_gov_ar_objectos_GPOut}}
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Sigla: {{sigla}}</h5>
+                <p class="card-text">Nome: {{nome}}</p>
+                <a href="#" class="btn btn-primary">ver mais</a>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}
