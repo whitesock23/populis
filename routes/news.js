@@ -9,7 +9,7 @@ router.get("/news", async(req, res) => {
     const response = await axios.get(parliamentAPI);
     const news = response.data;
     const gruposParl = news.Legislatura.GruposParlamentares.pt_gov_ar_objectos_GPOut
-    console.log(gruposParl);
+    console.log(news);
     // console.log(news);
     res.render("news", { layout: false, news });
 });
