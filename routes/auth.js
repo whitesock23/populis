@@ -5,26 +5,33 @@ const bcrypt = require("bcryptjs");
 const axios = require("axios");
 let IdValidator= "https://angolaapi.herokuapp.com/api/v1/validate/bi/"
 
+/*  router.get("/", (req, res)=>{
+    res.render("/")
+}); 
+router.post("/", async (req,res)=>{
+    const {cc} = req.body;
 
-router.get("/signup", (req, res) => {
-    res.render("auth/signup");
-});
-  
-router.post("/signup", async (req, res) => {
-    const { username, email, cc, password } = req.body;
-
-//check cartão de cidadão
     try {
         IdValidator = `https://angolaapi.herokuapp.com/api/v1/validate/bi/${cc}`
         const responseFromApi = await axios.get(IdValidator);
         //const deputies = response.data;
         
     } catch (e) {
-        console.log(e);
-        res.render("auth/signup", { errorMessage: "Please add a valid ID" });
+        //console.log(e);
+        res.render("/", { errorMessage: "Please add a valid ID" });
       return;
-    }
-        
+    }    
+});
+  */
+router.get("/signup", (req, res) => {
+    res.render("auth/signup");
+});
+
+
+router.post("/signup", async (req, res) => {
+    const { username, email, password } = req.body;
+
+//check cartão de cidadão
      
 
 //check if username and password are filled in
@@ -64,7 +71,7 @@ router.post("/signup", async (req, res) => {
   router.get("/login", (req, res) => {
     res.render("auth/login");
   });
-  
+
   router.post("/login", async (req, res) => {
     const { username, password } = req.body;
   

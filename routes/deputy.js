@@ -9,7 +9,7 @@ const parliamentAPI = "https://app.parlamento.pt/webutils/docs/doc.txt?path=6148
 router.get("/deputies", async(req, res) => {
     const response = await axios.get(deputiesAPI);
     const deputies = response.data;
-    console.log(deputies);
+    //console.log(deputies);
     res.render("deputies/deputies-list", { deputies });
 });
 
