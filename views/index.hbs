@@ -1,2 +1,19 @@
 <h1>{{title}} 🚀</h1>
 <p>Welcome Pre Alpha!</p>
+<form action="/validateCC" method="POST">
+
+  <label>Cartão de Cidadão</label>
+  <input type="text" name="cc" required />
+  <button type="submit">Autenthication</button>
+
+</form>
+
+<form action="/" method="GET">
+<button type="submit">Guest</button> 
+</form> 
+
+{{#if errorMessage}}
+
+<p>{{errorMessage}}</p>
+
+{{/if}}
