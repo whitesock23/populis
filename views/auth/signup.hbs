@@ -1,0 +1,27 @@
+<h2>Sign Up</h2>
+<form action="/signup" method="POST">
+  <label>Username</label>
+  <input type="text" name="username" required />
+
+  <label>Cartão de Cidadão</label>
+  <input type="text" name="cc" required />
+
+  <label>Email</label>
+  <input type="email" name="email" required />
+
+  <label>Password</label>
+  <input type="password" name="password" required />
+
+  <button type="submit">Create account</button>
+  
+</form>
+
+<form action="/index" method="POST">
+<button type="submit" name="guest">Guest</button> 
+</form>
+
+{{#if errorMessage}}
+
+<p>{{errorMessage}}</p>
+
+{{/if}}
