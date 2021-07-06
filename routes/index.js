@@ -8,6 +8,10 @@ router.get("/", (req, res, next) => {
     res.render("index");
 });
 
+router.get("/index2", (req, res, next) => {
+    res.render("index2", { layout: false });
+});
+
 router.post("/validateCC", async(req, res) => {
     const { cc } = req.body;
 
