@@ -1,37 +1,47 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00b7ff;
+    color: #00b7ff;
 }
 
-h1 {
-
+img.party-logo {
+    max-width: 54px;
 }
+
+.ballot {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-width: 600px;
+}
+
 @media (min-width: 376px) {
-.mobile-frame {
-  display: block;
-  border: 1.334vh solid #111;
-  border-radius: 4.5vh;
-  background-color: black;
-}
+    .mobile-frame {
+        display: block;
+        border: 1.334vh solid #111;
+        border-radius: 4.5vh;
+        background-color: black;
+    }
 }
 
 .voting-body {
-  background-image: url(/images/ballot.jpeg);
-  background-size: cover;
-  height: 660px;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: top center;
+    background-image: url(/images/ballot.jpeg);
+    background-size: cover;
+    height: 660px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: inherit;
-  border-color: transparent;
+    color: #fff;
+    background-color: inherit;
+    border-color: transparent;
 }
 
 .d-flex {
@@ -39,19 +49,18 @@ h1 {
 }
 
 @media (max-width: 375px) {
-button.btn {
-  font-size: 10px;
-}
-
-.d-flex {
-  justify-content: center;
-}
+    button.btn {
+        font-size: 10px;
+    }
+    .d-flex {
+        justify-content: center;
+    }
 }
 
 .card-img-hidden {
-  display: none;
+    display: none;
 }
 
 hr {
-	border-top: 1px solid red;
-  }
+    border-top: 1px solid red;
+}
