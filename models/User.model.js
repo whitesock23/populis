@@ -6,7 +6,11 @@ const userSchema = new Schema({
     password: String,
     cc: String,
     email: String,
-    role: String //Admin, Reader, Guest, Superuser
+    role: String, //Admin, Reader, Guest, Superuser
+    circle: {
+      type: Schema.Types.ObjectId,
+      ref: "Circle",
+    }
 });
 
 const User = model("User", userSchema);
