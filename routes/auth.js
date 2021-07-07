@@ -11,7 +11,7 @@ router.get("/signup", (req, res) => {
 });
 
 router.post("/signup", async(req, res) => {
-    const { username, email, cc, password } = req.body;
+    const { username, email, password } = req.body;
 
     //check cartão de cidadão
     // try {
@@ -55,7 +55,6 @@ router.post("/signup", async(req, res) => {
     await User.create({
         username,
         email,
-        cc,
         password: hashedPassword,
     });
     res.redirect("/");
@@ -105,21 +104,22 @@ router.post("/logout", (req, res) => {
 });
 
 // Validate CC Portugal
-
 router.get("/cc_portugal", (req, res) => {
     res.render("auth/cc_portugal", { layout: false });
 });
 
 router.post("/cc_portugal", async(req, res) => {
     const { cartCid } = req.body;
-    console.log(cartCid)
+    console.log('cc:', cartCid)
 
     if (cc.validate(`${cartCid}`)) {
         console.log('is valid');
-        res.render("auth/signup", { GoodMessage: "O seu número é válido " });
+        res.render("auth/signup", { GoodMessage: "O seu número é válido" });
 
     } else {
-        console.log('not valid'); { errorMessage: "O seu número é inválido, verifique" };
+       res.render("auth/cc_portugal", { errorMessage: "O seu número é inválido, verifique" });
+
+        console.log('not valid'); 
     };
 });
 
@@ -135,13 +135,13 @@ router.post("/cc_angola", async(req, res) => {
         IdValidator = `https://angolaapi.herokuapp.com/api/v1/validate/bi/${cc}`
         const responseFromApi = await axios.get(IdValidator);
         res.redirect("/signup")
-        console.log('is valid')
+        //console.log('is valid')
             //const deputies = response.data;
 
     } catch (e) {
         //console.log(e);
         res.render("index", { errorMessage: "Please add a valid ID" });
-        console.log('not valid')
+        //console.log('not valid')
         return;
     }
 });
