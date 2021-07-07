@@ -10,9 +10,9 @@ router.get("/voting", async(req, res, next) => {
     try {
         const response = await axios.get(parliamentAPI);
         const voting = response.data;
-        console.log(voting)
+        // console.log(voting)
         const party = await Party.find().sort({ nome: 1 })
-        res.render("parliament/voting", { voting, party });
+        res.render("parliament/voting", { layout: false, voting, party });
     } catch (err) {
         next(err);
     }

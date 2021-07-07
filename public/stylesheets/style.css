@@ -20,7 +20,8 @@ img.party-logo {
     max-width: 600px;
 }
 
-@media (min-width: 376px) {
+
+/* @media (min-width: 376px) {
     .mobile-frame {
         display: block;
         border: 1.334vh solid #111;
@@ -63,4 +64,4 @@ img.party-logo {
 
 hr {
     border-top: 1px solid red;
-}
+} */

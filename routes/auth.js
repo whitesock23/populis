@@ -11,7 +11,7 @@ router.get("/signup", (req, res) => {
 });
 
 router.post("/signup", async(req, res) => {
-    const { username, email, cc, password } = req.body;
+    const { username, email, password } = req.body;
 
     //check cartão de cidadão
     // try {
@@ -55,7 +55,6 @@ router.post("/signup", async(req, res) => {
     await User.create({
         username,
         email,
-        cc,
         password: hashedPassword,
     });
     res.redirect("/");
@@ -119,7 +118,7 @@ router.post("/cc_portugal", async(req, res) => {
         res.render("auth/signup", { GoodMessage: "O seu número é válido " });
 
     } else {
-        console.log('not valid'); { errorMessage: "O seu número é inválido, verifique" };
+        console.log('not valid', { errorMessage: "O seu número é inválido, verifique" });
     };
 });
 
@@ -139,7 +138,7 @@ router.post("/cc_angola", async(req, res) => {
             //const deputies = response.data;
 
     } catch (e) {
-        //console.log(e);
+        console.log(e);
         res.render("index", { errorMessage: "Please add a valid ID" });
         console.log('not valid')
         return;
