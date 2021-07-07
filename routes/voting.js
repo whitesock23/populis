@@ -12,7 +12,7 @@ router.get("/voting", async(req, res, next) => {
         const voting = response.data;
         // console.log(voting)
         const party = await Party.find().sort({ nome: 1 })
-        res.render("parliament/voting", { layout: false, voting, party });
+        res.render("parliament/voting", { voting, party });
     } catch (err) {
         next(err);
     }

@@ -11,13 +11,24 @@ img.party-logo {
     max-width: 54px;
 }
 
-.ballot {
-    font-size: 12px;
+#flexRadioDefault2 {
+    margin-top: 45px;
+}
+
+#ballotText {
+    font-size: 15px;
+}
+
+.ballot-one {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     align-items: center;
-    max-width: 600px;
+    justify-content: space-between;
+}
+
+.ballot-second {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
