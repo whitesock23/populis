@@ -13,22 +13,4 @@ router.get("/index2", (req, res) => {
     res.render("index2", { layout: false });
 });
 
-router.post("/validateCC", async(req, res) => {
-    const { cc } = req.body;
-
-    try {
-        IdValidator = `https://angolaapi.herokuapp.com/api/v1/validate/bi/${cc}`
-        const responseFromApi = await axios.get(IdValidator);
-        res.redirect("/signup")
-            //const deputies = response.data;
-
-    } catch (e) {
-        //console.log(e);
-        res.render("index", { errorMessage: "Please add a valid ID" });
-        return;
-    }
-});
-
-
-
 module.exports = router;

@@ -1,33 +1,36 @@
-{{!-- {{#each voting.Legislatura.GruposParlamentares.pt_gov_ar_objectos_GPOut}}
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        {{sigla}} - Partido: {{nome}} <button type="submit">Votar</button>
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-</div>
-{{/each}} --}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Animated Accordion</title>
+	<link rel="stylesheet" href="/stylesheets/styles.css">
+  	<link rel="stylesheet" href="/stylesheets/accordion.css">
 
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".accordion_header").click(function(){
+			   $(".accordion_header").removeClass("active");
+			   $(this).addClass("active");
+			});
+		});
+	</script>
+</head>
+<body>
 {{#each party}}
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        {{this}} - Partido: {{nome}} <button type="submit">Votar</button>
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
+<div class="wrapper">
+  <div class="accordion_wrap accordion_1">
+    <div class="accordion_header">
+      <div class="flex-row">
+           <img class="col-md-4" class="party-logo" src="{{logo}}" alt="">
+            <div class="col-md-2">{{sigla}}</div>
+            <div class="col-md-6">{{nome}}</div>
+            </div>
+    </div>
+    <div class="accordion_body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus culpa ducimus amet unde consequatur ullam ipsum repellendus eligendi quo nisi!</p>
     </div>
   </div>
-</div>
+</div>	
 {{/each}}
+</body>

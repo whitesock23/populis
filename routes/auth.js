@@ -139,7 +139,7 @@ router.post("/cc_angola", async(req, res) => {
             //const deputies = response.data;
 
     } catch (e) {
-        //console.log(e);
+        console.log(e);
         res.render("index", { errorMessage: "Please add a valid ID" });
         //console.log('not valid')
         return;
