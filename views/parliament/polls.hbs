@@ -17,22 +17,38 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/globals.css" />
 </head>
 
-<body style="margin: 0; background: #ffffff">
-    <input type="hidden" id="anPageName" name="page" value="empty-background" />
-    <div class="empty-background screen">
-        <img class="group-6800-kV0Jby" src="/images/group-6800@2x.png" />
-        <div class="group-6801-kV0Jby">
-            <img class="logo-1-2ouVfe" src="/images/logo-1@2x.png" />
-            <div class="populis-2ouVfe">POPULIS</div>
-            <div class="silent-2ouVfe">VOX</div>
+<body>
+    <div class="container">
+
+        <div class="row">
             {{#each polls }}
-            <div class="form_poll">
+            <div class="col-md-6">
                 <form onsubmit="vote(event);" id="{{this._id}}">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title">
                                 <span class="glyphicon glyphicon-arrow-right"></span>{{ this.topic }}
                             </h3>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-group">
+                                {{#each this.choices}}
+                                <li class="list-group-item">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" value="{{@index}}">
+                                            {{ this.value }}
+                                            {{!-- <div class="alignright" id="vote-count-{{../id}}-{{@index}}">{{ this.votes
+                                                }}</div> --}}
+                                        </label>
+                                    </div>
+                                </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                        <div class="panel-footer">
+                            <input type="submit" id="vote-btn-{{this.id}}" class="btn btn-primary btn-sm" value="Vote">
+                            
                         </div>
                         <div class="panel-body">
                             <ul class="list-group">
@@ -60,7 +76,11 @@
                 {{/each}}
             </div>
         </div>
-
+    </form>
+{{!--     {{/each}} --}}
+    </div>
+        </div>
+        
     </div>
 
 
@@ -72,7 +92,9 @@
             event.preventDefault();
             var pollId = event.target.id;
             var choice = event.target.optionsRadios.value;
-            axios.post('/' + pollId + '/vote', {choice: choice});
+            axios.post('/' + pollId + '/vote', { choice: choice });
+            
+
 
             // disable the button, so a user san't vote twice
             document.querySelector('#vote-btn-' + pollId).disabled = true;

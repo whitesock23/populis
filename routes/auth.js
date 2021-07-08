@@ -98,10 +98,6 @@ router.post("/login", async(req, res) => {
     }
 });
 
-router.post("/logout", (req, res) => {
-    req.session.destroy();
-    res.redirect("/");
-});
 
 // Validate CC Portugal
 router.get("/cc_portugal", (req, res) => {
@@ -111,20 +107,19 @@ router.get("/cc_portugal", (req, res) => {
 router.post("/cc_portugal", async(req, res) => {
     const { cartCid } = req.body;
     console.log('cc:', cartCid)
-
+    
     if (cc.validate(`${cartCid}`)) {
         console.log('is valid');
-        res.render("auth/signup", { GoodMessage: "O seu número é válido" });
-
+         res.render("auth/signup", { GoodMessage: "O seu número é válido" }); 
+        
     } else {
-       res.render("auth/cc_portugal", { errorMessage: "O seu número é inválido, verifique" });
-
+        res.render("auth/cc_portugal", { errorMessage: "O seu número é inválido, verifique" });
+        
         console.log('not valid'); 
     };
 });
 
 // Validate CC Angola
-
 router.get("/cc_angola", (req, res) => {
     res.render("auth/cc_angola", { layout: false });
 });
@@ -136,14 +131,18 @@ router.post("/cc_angola", async(req, res) => {
         const responseFromApi = await axios.get(IdValidator);
         res.redirect("/signup")
         //console.log('is valid')
-            //const deputies = response.data;
-
+        //const deputies = response.data;
+        
     } catch (e) {
         console.log(e);
         res.render("index", { errorMessage: "Please add a valid ID" });
         //console.log('not valid')
         return;
     }
+    router.post("/logout", (req, res) => {
+        req.session.destroy();
+        res.redirect("/");
+    });
 });
 
 module.exports = router;
