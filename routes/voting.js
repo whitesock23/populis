@@ -57,7 +57,6 @@ router.post('/:pollId/vote', (req, res, next) => {
     }, {}, (err, numberAffected) => {
         res.send('');
     });
-
 });
 
 module.exports = router;

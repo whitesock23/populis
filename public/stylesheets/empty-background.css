@@ -1,0 +1,89 @@
+/* screen - empty-background */
+
+.empty-background {
+    background-color: #ffffff;
+    height: 100vh;
+    margin: 0px;
+    min-height: 640px;
+    min-width: 360px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.form_poll {
+    background-color: transparent;
+    height: 50.66%;
+    left: calc(50.00% - 207px);
+    position: absolute;
+    top: 0px;
+    width: 414px;
+    top: 65px;
+}
+
+.empty-background .group-6800-kV0Jby {
+    background-color: transparent;
+    height: 32.66%;
+    left: calc(50.00% - 180px);
+    position: absolute;
+    top: 0px;
+    width: 360px;
+}
+
+.empty-background .group-6801-kV0Jby {
+    background-color: transparent;
+    height: 33px;
+    left: calc(50.00% - 90px);
+    position: absolute;
+    top: calc(50.00% - 297px);
+    width: 184px;
+}
+
+.empty-background .logo-1-2ouVfe {
+    background-color: transparent;
+    height: 30px;
+    left: calc(50.00% - 42px);
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: calc(50.00% - 16px);
+    width: 30px;
+}
+
+.empty-background .populis-2ouVfe {
+    background-color: transparent;
+    color: #3f414e;
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: calc(50.00% - 2px);
+    letter-spacing: 3.84px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: calc(50.00% - 6px);
+    width: auto;
+}
+
+.empty-background .silent-2ouVfe {
+    background-color: transparent;
+    color: #3f414e;
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: calc(50.00% - 92px);
+    letter-spacing: 3.84px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: calc(50.00% - 6px);
+    width: auto;
+}

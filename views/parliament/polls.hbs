@@ -5,6 +5,9 @@
     <title>{{title}}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css' />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/empty-background.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/globals.css" />
 </head>
 
 <body>
@@ -40,15 +43,28 @@
                             <input type="submit" id="vote-btn-{{this.id}}" class="btn btn-primary btn-sm" value="Vote">
                             
                         </div>
-                    </div>
-                </form>
+                    </li>
+                    {{/each}}
+                </ul>
             </div>
-            {{/each}}
+            <div class="panel-footer">
+                <input type="submit" id="vote-btn-{{this.id}}" class="btn btn-primary btn-sm" value="Vote">
+            </div>
         </div>
+    </form>
+
+    {{/each}}
     </div>
+        </div>
+        
+    </div>
+
+
+  
     <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
     <script defer>
         var vote = function (event) {
+            debugger;
             event.preventDefault();
             var pollId = event.target.id;
             var choice = event.target.optionsRadios.value;
@@ -59,9 +75,7 @@
             // disable the button, so a user san't vote twice
             document.querySelector('#vote-btn-' + pollId).disabled = true;
             var voteCount = document.querySelector('#vote-count-' + pollId + '-' + choice);
-            voteCount.textContent++;
-            voteCount.style.color = 'green';
-            voteCount.style.fontWeight = '900';
+            window.location = "/"
         };
     </script>
 </body>
