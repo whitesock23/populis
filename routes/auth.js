@@ -110,7 +110,7 @@ router.post("/cc_portugal", async(req, res) => {
     
     if (cc.validate(`${cartCid}`)) {
         console.log('is valid');
-        res.render("auth/signup", { GoodMessage: "O seu número é válido" });
+         res.render("auth/signup", { GoodMessage: "O seu número é válido" }); 
         
     } else {
         res.render("auth/cc_portugal", { errorMessage: "O seu número é inválido, verifique" });
@@ -120,7 +120,6 @@ router.post("/cc_portugal", async(req, res) => {
 });
 
 // Validate CC Angola
-
 router.get("/cc_angola", (req, res) => {
     res.render("auth/cc_angola", { layout: false });
 });
