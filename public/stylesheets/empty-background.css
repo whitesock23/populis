@@ -7,8 +7,8 @@
     min-height: 640px;
     min-width: 360px;
     mix-blend-mode: normal;
-    overflow: hidden;
-    overflow-x: hidden;
+    /* overflow: hidden;
+    overflow-x: hidden; */
     position: relative;
     width: 100%;
 }
