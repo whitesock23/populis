@@ -42,12 +42,20 @@ router.post("/signup", async(req, res) => {
         return;
     }
 
+/*     if (user === CurrentLoggedUser){
+        return
+    } else {
+        res.render('auth/signup')
+    } */
+
     //check if username already exists
     const user = await User.findOne({ username });
     if (user !== null) {
         res.render("auth/signup", { errorMessage: "Username already exists" });
         return;
     }
+
+
 
     const saltRounds = 10;
     const salt = bcrypt.genSaltSync(saltRounds);
@@ -82,14 +90,14 @@ router.post("/login", async(req, res) => {
         return;
     }
 
+
     //Check for password
     if (bcrypt.compareSync(password, user.password)) {
         //Passwords match
 
         //Initializing the session with the current user
         req.session.currentUser = user;
-
-        res.redirect("/");
+        res.redirect("/menu");
     } else {
         //Passwords don't match
         res.render("auth/login", {
@@ -110,7 +118,7 @@ router.post("/cc_portugal", async(req, res) => {
     
     if (cc.validate(`${cartCid}`)) {
         console.log('is valid');
-         res.render("auth/signup", { GoodMessage: "O seu número é válido" }); 
+         res.render("parliament/polls", { GoodMessage: "O seu número é válido" }); 
         
     } else {
         res.render("auth/cc_portugal", { errorMessage: "O seu número é inválido, verifique" });
@@ -139,10 +147,10 @@ router.post("/cc_angola", async(req, res) => {
         //console.log('not valid')
         return;
     }
-    router.post("/logout", (req, res) => {
-        req.session.destroy();
-        res.redirect("/");
-    });
+});
+router.post("/logout", (req, res) => {
+    req.session.destroy();
+    res.redirect("/");
 });
 
 module.exports = router;
