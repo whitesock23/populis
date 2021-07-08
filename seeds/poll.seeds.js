@@ -22,15 +22,52 @@ Poll.remove({})
             polls.push({
                 topic: topics[i],
                 choices: [{
-                        value: "Yes",
+                        value: "Partido Socialista",
                         votes: Math.round(Math.random() * 20)
                     },
                     {
-                        value: "No",
+                        value: "Partido Social Democrata",
                         votes: Math.round(Math.random() * 20)
                     },
                     {
-                        value: "I really don't care",
+                        value: "Bloco De Esquerda",
+                        votes: Math.round(Math.random() * 20)
+                    },
+                    {
+                        value: "Partido Comunista Português",
+                        votes: Math.round(Math.random() * 20)
+                    },
+                    {
+                        value: "Centro Democrático Social - Partido Popular",
+                        votes: Math.round(Math.random() * 20)
+                    },
+                    {
+                        value: "Pessoas-Animais-Natureza",
+                        votes: Math.round(Math.random() * 20)
+                    }, {
+                        value: "Partido Ecologista 'Os Verdes'",
+                        votes: Math.round(Math.random() * 20)
+                    },
+                    {
+                        value: "PCTP-MRPP",
+                        votes: Math.round(Math.random() * 20)
+                    },
+                    {
+                        value: "Chega",
+                        votes: Math.round(Math.random() * 20)
+                    }, {
+                        value: "Iniciativa Liberal",
+                        votes: Math.round(Math.random() * 20)
+                    },
+                    {
+                        value: "Livre",
+                        votes: Math.round(Math.random() * 20)
+                    },
+                    {
+                        value: "Partido Ecologista Os Verdes",
+                        votes: Math.round(Math.random() * 20)
+                    }, {
+                        value: "Ergue-te",
                         votes: Math.round(Math.random() * 20)
                     }
                 ]

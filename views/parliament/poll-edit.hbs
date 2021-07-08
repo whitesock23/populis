@@ -4,14 +4,11 @@
   <input type="text" name="topic" value="{{pollToEdit.topic}}" />
 
   <label>Party</label>
-  <input type="text" name="party" value="{{party}}" />
   <select name="party">
     <option value="">Choose party</option>
-    {{#each allParties}}
-      {{#eq name ../pollToEdit.party.nome}}
+    {{#each allParties.choices}}
+      {{#eq nome ../pollToEdit.party.nome}}
         <option value={{_id}} selected>{{nome}}</option>
-      {{else}}
-        <option value={{_id}}>{{nome}}</option>
       {{/eq}}
     {{/each}}
   </select>

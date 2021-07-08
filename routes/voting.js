@@ -25,11 +25,6 @@ router.get('/polls', (req, res, next) => {
     });
 });
 
-router.get("/:pollId", async(req, res) => {
-    const pollDetail = await Poll.findById(req.params.pollId);
-    res.render("parliament/poll-detail", pollDetail);
-});
-
 router.post('/:pollId/vote', (req, res, next) => {
     const choice = req.body.choice;
     const identifier = `choices.${choice}.votes`;
@@ -41,22 +36,6 @@ router.post('/:pollId/vote', (req, res, next) => {
         res.send('');
     });
 
-});
-
-router.get("/:pollId/edit", async(req, res) => {
-    // const pollToEdit = await Poll.findById(req.params.pollId).populate("party");
-    const pollToEdit = await Poll.findById(req.params.pollId)
-    const allParties = await Party.find()
-    res.render("parliament/poll-edit", { pollToEdit, allParties });
-});
-
-router.post("/:pollId/edit", async(req, res) => {
-    const { topic, party } = req.body;
-    await Poll.findByIdAndUpdate(req.params.pollId, {
-        topic,
-        party,
-    });
-    res.redirect("/polls");
 });
 
 module.exports = router;
