@@ -1,0 +1,366 @@
+/* screen - android-4 */
+
+.android-4 {
+    background-color: #ffffff;
+    height: 100vh;
+    margin: 0px;
+    min-height: 640px;
+    min-width: 360px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.android-4 .union-QG67a56 {
+    background-color: transparent;
+    height: 608px;
+    left: calc(50.00% - 195px);
+    mix-blend-mode: normal;
+    position: absolute;
+    top: calc(50.00% - 338px);
+    width: 391px;
+}
+
+.android-4 .title-QG67a5 {
+    background-color: transparent;
+    color: var(--bright-gray);
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: calc(50.00% - 146px);
+    letter-spacing: 0.00px;
+    line-height: 37.8px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: calc(50.00% - 233px);
+    width: 315px;
+}
+
+.android-4 .para-comunidades-mais-fortes-QG67a5 {
+    background-color: transparent;
+    color: #a1a4b2;
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: calc(50.00% - 150px);
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: calc(50.00% - 151px);
+    width: 321px;
+}
+
+.android-4 .group-7-QG67a5 {
+    background-color: transparent;
+    height: 169px;
+    left: calc(50.00% - 151px);
+    position: absolute;
+    top: calc(50.00% - 90px);
+    width: 142px;
+}
+
+.android-4 .rectangle-7-VGVFGl {
+    background-color: #8e97fd;
+    border-radius: 10px;
+    height: 169px;
+    left: calc(50.00% - 71px);
+    mix-blend-mode: normal;
+    position: absolute;
+    top: calc(50.00% - 84px);
+    width: 142px;
+}
+
+.android-4 .group-4-VGVFGl {
+    background-color: transparent;
+    height: 19px;
+    left: calc(50.00% - 23px);
+    position: absolute;
+    top: calc(50.00% + 29px);
+    width: 48px;
+}
+
+.android-4 .votar-xLStAs {
+    background-color: transparent;
+    color: #ffeccc;
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: calc(50.00% - 24px);
+    letter-spacing: 0.00px;
+    line-height: 19.5px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: calc(50.00% - 10px);
+    white-space: nowrap;
+    width: auto;
+}
+
+.android-4 .mask-group-VGVFGl {
+    background-color: transparent;
+    height: 169px;
+    left: calc(50.00% - 71px);
+    position: absolute;
+    top: calc(50.00% - 84px);
+    width: 142px;
+}
+
+.android-4 .group-19-QG67a5 {
+    background-color: transparent;
+    height: 169px;
+    left: calc(50.00% + 10px);
+    position: absolute;
+    top: calc(50.00% + 61px);
+    width: 142px;
+}
+
+.android-4 .rectangle-7-Dhfrno {
+    background-color: #ffcf86;
+    border-radius: 10px;
+    height: 169px;
+    left: calc(50.00% - 71px);
+    mix-blend-mode: normal;
+    position: absolute;
+    top: calc(50.00% - 84px);
+    width: 142px;
+}
+
+.android-4 .group-4-Dhfrno {
+    background-color: transparent;
+    height: 19px;
+    left: calc(50.00% - 23px);
+    position: absolute;
+    top: calc(50.00% + 38px);
+    width: 50px;
+}
+
+.android-4 .login-pTpCca {
+    background-color: transparent;
+    color: var(--bright-gray);
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: calc(50.00% - 25px);
+    letter-spacing: 0.00px;
+    line-height: 19.5px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: calc(50.00% - 10px);
+    white-space: nowrap;
+    width: auto;
+}
+
+.android-4 .image-5-Dhfrno {
+    background-color: transparent;
+    height: 85px;
+    left: 21px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 28px;
+    width: 101px;
+}
+
+.android-4 .group-20-QG67a5 {
+    background-color: transparent;
+    height: 134px;
+    left: calc(50.00% - 149px);
+    position: absolute;
+    top: calc(50.00% + 96px);
+    width: 142px;
+}
+
+.android-4 .rectangle-7-1XusW1 {
+    background-color: #feb18f;
+    border-radius: 10px;
+    height: 134px;
+    left: calc(50.00% - 71px);
+    mix-blend-mode: normal;
+    position: absolute;
+    top: calc(50.00% - 67px);
+    width: 142px;
+}
+
+.android-4 .group-4-1XusW1 {
+    background-color: transparent;
+    height: 24px;
+    left: calc(50.00% - 17px);
+    position: absolute;
+    top: calc(50.00% + 25px);
+    width: 37px;
+}
+
+.android-4 .info-j5cXre {
+    background-color: transparent;
+    color: var(--bright-gray);
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: calc(50.00% - 18px);
+    letter-spacing: 0.00px;
+    line-height: 24.3px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: calc(50.00% - 12px);
+    white-space: nowrap;
+    width: auto;
+}
+
+.android-4 .mask-group-1XusW1 {
+    background-color: transparent;
+    height: 135px;
+    left: calc(50.00% - 71px);
+    position: absolute;
+    top: calc(50.00% - 68px);
+    width: 142px;
+}
+
+.android-4 .group-6790-QG67a5 {
+    background-color: transparent;
+    height: 134px;
+    left: calc(50.00% + 10px);
+    position: absolute;
+    top: 231px;
+    width: 142px;
+}
+
+.android-4 .group-18-sEEcow {
+    background-color: transparent;
+    height: 134px;
+    left: calc(50.00% - 71px);
+    position: absolute;
+    top: calc(50.00% - 67px);
+    width: 142px;
+}
+
+.android-4 .rectangle-7-AohGAj {
+    background-color: #fa6e5a;
+    border-radius: 10px;
+    height: 134px;
+    left: calc(50.00% - 71px);
+    mix-blend-mode: normal;
+    position: absolute;
+    top: calc(50.00% - 67px);
+    width: 142px;
+}
+
+.android-4 .group-4-AohGAj {
+    background-color: transparent;
+    height: 24px;
+    left: calc(50.00% - 50px);
+    position: absolute;
+    top: calc(50.00% + 30px);
+    width: 101px;
+}
+
+.android-4 .parlamento-EcezN4 {
+    background-color: transparent;
+    color: #ffeccc;
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: calc(50.00% - 50px);
+    letter-spacing: 0.00px;
+    line-height: 24.3px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: calc(50.00% - 12px);
+    white-space: nowrap;
+    width: auto;
+}
+
+.android-4 .image-2-sEEcow {
+    background-color: transparent;
+    height: 70px;
+    left: calc(50.00% - 40px);
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 81px;
+}
+
+.android-4 .line-1-QG67a5 {
+    background-color: transparent;
+    height: 5px;
+    left: calc(50.00% - 57px);
+    position: absolute;
+    top: calc(50.00% + 282px);
+    width: 115px;
+}
+
+.android-4 .group-6801-QG67a5 {
+    background-color: transparent;
+    height: 33px;
+    left: calc(50.00% - 90px);
+    position: absolute;
+    top: calc(50.00% - 297px);
+    width: 184px;
+}
+
+.android-4 .logo-1-J3vbZU {
+    background-color: transparent;
+    height: 30px;
+    left: calc(50.00% - 42px);
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: calc(50.00% - 16px);
+    width: 30px;
+}
+
+.android-4 .populis-J3vbZU {
+    background-color: transparent;
+    color: var(--bright-gray);
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-xxs);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: calc(50.00% - 2px);
+    letter-spacing: 3.84px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: calc(50.00% - 6px);
+    width: auto;
+}
+
+.android-4 .silent-J3vbZU {
+    background-color: transparent;
+    color: var(--bright-gray);
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-xxs);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: calc(50.00% - 92px);
+    letter-spacing: 3.84px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: calc(50.00% - 6px);
+    width: auto;
+}

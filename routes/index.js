@@ -13,4 +13,9 @@ router.get("/index2", (req, res) => {
     res.render("index2", { layout: false });
 });
 
+router.get("/menu", (req, res) => {
+    res.render("menu");
+});
+
+
 module.exports = router;
