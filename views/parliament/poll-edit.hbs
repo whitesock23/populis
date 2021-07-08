@@ -1,0 +1,26 @@
+<h1>Edit Poll</h1>
+<form action="/{{pollToEdit._id}}/edit" method="POST">
+  <label>Title</label>
+  <input type="text" name="topic" value="{{pollToEdit.topic}}" />
+
+  <label>Party</label>
+  <input type="text" name="party" value="{{party}}" />
+  <select name="party">
+    <option value="">Choose party</option>
+    {{#each allParties}}
+      {{#eq name ../pollToEdit.party.nome}}
+        <option value={{_id}} selected>{{nome}}</option>
+      {{else}}
+        <option value={{_id}}>{{nome}}</option>
+      {{/eq}}
+    {{/each}}
+  </select>
+
+  {{!-- <label>Description</label>
+  <textarea row="5" cols="20" name="description">{{pollToEdit.description}}</textarea>
+
+  <label>Rating</label>
+  <input type="number" name="rating" value={{pollToEdit.rating}} /> --}}
+
+  <button type="submit">Update</button>
+</form>
