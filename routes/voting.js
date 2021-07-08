@@ -3,6 +3,7 @@ const router = express.Router();
 const Deputy = require("../models/Deputy.model");
 const Party = require("../models/Party.model");
 const Poll = require("../models/Voting.model");
+const User = require ("../models/User.model")
 const axios = require("axios");
 const parliamentAPI = "https://app.parlamento.pt/webutils/docs/doc.txt?path=6148523063446f764c324679626d56304c3239775a57356b595852684c3052685a47397a51574a6c636e52766379394a626d5a76636d3168773666446f32386c4d6a424359584e6c4c31684a566955794d45786c5a326c7a6247463064584a684c306c755a6d39796257466a5957394359584e6c57456c575832707a6232347564486830&fich=InformacaoBaseXIV_json.txt"
 
@@ -20,7 +21,7 @@ router.get("/voting", async(req, res, next) => {
 });
 
 router.get('/polls', (req, res, next) => {
-    Poll.find().exec((err, polls) => {
+    Poll.find().exec((err, polls ) => {
         res.render('parliament/polls', { polls: polls });
     });
 });
@@ -30,9 +31,11 @@ router.get("/:pollId", async(req, res) => {
     res.render("parliament/poll-detail", pollDetail);
 });
 
-router.post('/:pollId/vote', (req, res, next) => {
-    const choice = req.body.choice;
+router.post('/:pollId/vote', async (req, res, next) => {
+    const choice = req.body.choices;
+    console.log('cc:', AllParty);
     const identifier = `choices.${choice}.votes`;
+     console.log('cc2:', identifier); 
     Poll.update({ _id: req.params.pollId }, {
         $inc: {
             [identifier]: 1
@@ -47,7 +50,8 @@ router.get("/:pollId/edit", async(req, res) => {
     // const pollToEdit = await Poll.findById(req.params.pollId).populate("party");
     const pollToEdit = await Poll.findById(req.params.pollId)
     const allParties = await Party.find()
-    res.render("parliament/poll-edit", { pollToEdit, allParties });
+    console.log(allParties);
+    res.render("parliament/poll-edit", { pollToEdit,   allParties  });
 });
 
 router.post("/:pollId/edit", async(req, res) => {
