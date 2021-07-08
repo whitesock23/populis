@@ -84,8 +84,10 @@ app.use("/", auth);
 const poll = require('./routes/voting');
 app.use("/", poll);
 
-const info = require ('./routes/info')
+const info = require ('./routes/info');
 app.use("/", info);
+
+
 
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes

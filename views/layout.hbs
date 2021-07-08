@@ -19,25 +19,23 @@
          <div class="col-sm-2"></div>
          <div class="col-sm-8 mobile-frame">
             {{{body}}}
-            {{!-- <div class="btn-group d-flex w-100" role="group" aria-label="Basic example">
-               <form method="get" action="/info">
-                  <button type="submit" class="btn btn-primary bt1"><i class="fas fa-info"></i><br>Info</button>
-               </form>
-               <form method="get" action="/deputies">
-                  <button type="submit" class="btn btn-primary bt2"><i
-                        class="fas fa-university"></i><br>Parlamento</button>
-               </form>
-               <form method="get" action="/news">
-                  <button type="submit" class="btn btn-primary bt3"><i
-                        class="fas fa-newspaper"></i><br>Notícias</button>
-               </form>
-               <form method="get" action="/voting">
-                  <button type="submit" class="btn btn-primary bt4"><i class="fas fa-vote-yea"></i><br>Votar</button>
-               </form>
-               <form method="get" action="/signup">
-                  <button type="submit" class="btn btn-primary bt5"><i class="fas fa-vote-yea"></i><br>Entrar</button>
-               </form>
-            </div> --}}
+      <a href="/menu">Book List</a>
+    {{#if loggedInUser}}
+      <a href="/polls">Create book</a>
+    {{/if}}
+{{!--     <a href="/create-author">Create author</a>
+ --}}    <a href="/signup">Signup</a>
+
+    {{#if loggedInUser}}
+      Welcome
+      {{loggedInUser}}
+      <form action="/logout" method="POST">
+        <button type="submit">Logout</button>
+      </form>
+    {{else}}
+      <a href="/login">Login</a>
+    {{/if}}
+
          </div>
          <div class="col-sm-2"></div>
       </div>
