@@ -1,0 +1,13 @@
+:root { 
+  --santas-gray: #a1a4b2;
+
+ 
+  --font-size-l: 13px;
+  --font-size-m: 12px;
+  --font-size-xl: 16px;
+
+ 
+  --font-family-noto_sans: "Noto Sans", Helvetica;
+  --font-family-proxima_nova-bold: "Proxima Nova-Bold", Helvetica;
+
+}
