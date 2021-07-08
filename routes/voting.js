@@ -26,6 +26,19 @@ router.get('/polls', (req, res, next) => {
     });
 });
 
+// router.post('/:pollId/vote', (req, res, next) => {
+//     const choice = req.body.choice;
+//     const identifier = `choices.${choice}.votes`;
+//     Poll.update({ _id: req.params.pollId }, {
+//         $inc: {
+//             [identifier]: 1
+//         }
+//     }, {}, (err, numberAffected) => {
+//         res.send('');
+//     });
+// });
+
+
 router.post('/:pollId/vote', (req, res, next) => {
     const choice = req.body.choice;
     const identifier = `choices.${choice}.votes`;
@@ -34,7 +47,30 @@ router.post('/:pollId/vote', (req, res, next) => {
             [identifier]: 1
         }
     }, {}, (err, numberAffected) => {
+        let Pusher = require('pusher');
+        let pusher = new Pusher({
+            appId: process.env.PUSHER_APP_ID,
+            key: process.env.PUSHER_APP_KEY,
+            secret: process.env.PUSHER_APP_SECRET,
+            cluster: process.env.PUSHER_APP_CLUSTER
+        });
+
+        let payload = { pollId: req.params.pollId, choice: choice };
+        pusher.trigger('poll-events', 'vote', payload, req.body.socketId);
+
         res.send('');
+    });
+
+});
+
+router.get('/results', async(req, res) => {
+    const allPolls = await Poll.find();
+    allPolls.forEach((poll) => {
+        poll.choices.sort((a, b) => b.votes - a.votes);
+    });
+
+    res.render('parliament/results', {
+        polls: allPolls
     });
 });
 
