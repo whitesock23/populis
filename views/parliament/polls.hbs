@@ -5,37 +5,18 @@
     <title>{{title}}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css' />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script>
-        var vote = function (event) {
-            event.preventDefault();
-            var pollId = event.target.id;
-            var choice = event.target.optionsRadios.value;
-            axios.post('/' + pollId + '/vote', { choice: choice });
-
-            // disable the button, so a user san't vote twice
-            document.querySelector('#vote-btn-' + pollId).disabled = true;
-            var voteCount = document.querySelector('#vote-count-' + pollId + '-' + choice);
-            voteCount.textContent++;
-            voteCount.style.color = 'green';
-            voteCount.style.fontWeight = '900';
-        };
-    </script>
 </head>
 
 <body>
     <div class="container">
 
         <div class="row">
-
             {{#each polls }}
-            <a href="{{_id}}">Individual</a>
-            <a href="/{{pollToEdit._id}}/edit">Edit</a>
             <div class="col-md-6">
-                                <form onsubmit="vote(event);" id="{{this._id}}">
+                <form onsubmit="vote(event);" id="{{this._id}}">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <a href="{{_id}}"><h3 class="panel-title">vote</a>
+                            <h3 class="panel-title">
                                 <span class="glyphicon glyphicon-arrow-right"></span>{{ this.topic }}
                             </h3>
                         </div>
@@ -63,3 +44,23 @@
             </div>
             {{/each}}
         </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script defer>
+        var vote = function (event) {
+            event.preventDefault();
+            var pollId = event.target.id;
+            var choice = event.target.optionsRadios.value;
+            axios.post('/' + pollId + '/vote', { choice: choice });
+
+            // disable the button, so a user san't vote twice
+            document.querySelector('#vote-btn-' + pollId).disabled = true;
+            var voteCount = document.querySelector('#vote-count-' + pollId + '-' + choice);
+            voteCount.textContent++;
+            voteCount.style.color = 'green';
+            voteCount.style.fontWeight = '900';
+        };
+    </script>
+</body>
+
+</html>

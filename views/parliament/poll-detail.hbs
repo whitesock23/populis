@@ -10,7 +10,7 @@
         var vote = function (event) {
             event.preventDefault();
             var pollId = event.target.id;
-            var choice = event.target.optionsRadios.value;
+            var choice = event.target.optionsRadios.party;
             axios.post('/pools/' + pollId + '/vote', { choice: choice });
 
             // disable the button, so a user san't vote twice
@@ -44,7 +44,7 @@
                                     <div class="radio">
                                         <label>
                                             <input type="radio" name="optionsRadios" value="{{@index}}">
-                                            {{ this.value }}
+                                            {{ this.party }}
                                             <div class="alignright" id="vote-count-{{../id}}-{{@index}}">{{ votes
                                                 }}</div>
                                         </label>
