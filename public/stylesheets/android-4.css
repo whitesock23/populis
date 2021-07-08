@@ -237,7 +237,7 @@
     height: 134px;
     left: calc(50.00% + 10px);
     position: absolute;
-    top: 231px;
+    top: calc(50.00% - 90px);
     width: 142px;
 }
 

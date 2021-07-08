@@ -67,8 +67,8 @@
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
+        debugger;
         var vote = function (event) {
-            debugger
             event.preventDefault();
             var pollId = event.target.id;
             var choice = event.target.optionsRadios.value;
@@ -80,7 +80,9 @@
             {{!-- voteCount.textContent++;
             voteCount.style.color = 'green';
             voteCount.style.fontWeight = '900'; --}}
-            window.location = "/"
+            setTimeout(function () {
+                window.location = "/";
+                }, 2000);
         };
     </script>
 </body>

@@ -2,9 +2,8 @@
     margin: 0;
 }
 
-input.element {
+.cc_enter {
     border: none;
-    background-color: none;
 }
 
 .q1 {
@@ -301,8 +300,9 @@ input.element {
     z-index: 13;
     pointer-events: auto;
     margin-left: 0px;
-    width: 104px;
-    height: 48px;
+    width: 227px;
+    height: 13px;
+    text-align: center;
     margin-top: 0px;
     text-align: left;
     display: flex;
