@@ -38,6 +38,7 @@
                         </div>
                         <div class="panel-footer">
                             <input type="submit" id="vote-btn-{{this.id}}" class="btn btn-primary btn-sm" value="Vote">
+                            
                         </div>
                     </div>
                 </form>
@@ -52,6 +53,8 @@
             var pollId = event.target.id;
             var choice = event.target.optionsRadios.value;
             axios.post('/' + pollId + '/vote', { choice: choice });
+            
+
 
             // disable the button, so a user san't vote twice
             document.querySelector('#vote-btn-' + pollId).disabled = true;
