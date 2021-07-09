@@ -1,0 +1,425 @@
+/* screen - parlamento */
+
+.parlamento {
+    background-color: var(--white);
+    height: 100vh;
+    margin: 0px;
+    min-height: 640px;
+    min-width: 360px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.parlamento .union-ZXpo8m {
+    background-color: transparent;
+    height: 608px;
+    left: calc(50.00% - 195px);
+    mix-blend-mode: normal;
+    position: absolute;
+    top: calc(50.00% - 338px);
+    width: 391px;
+}
+
+.parlamento .line-1-ZXpo8m {
+    background-color: transparent;
+    height: 5px;
+    left: calc(50.00% - 57px);
+    position: absolute;
+    top: calc(50.00% + 282px);
+    width: 115px;
+}
+
+.parlamento .group-6801-ZXpo8m {
+    background-color: transparent;
+    height: 33px;
+    left: calc(50.00% - 140px);
+    position: absolute;
+    top: calc(50.00% - 297px);
+    width: 184px;
+}
+
+.parlamento .logo-1-hjw7D5 {
+    background-color: transparent;
+    height: 30px;
+    left: calc(50.00% - 42px);
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: calc(50.00% - 16px);
+    width: 30px;
+}
+
+.parlamento .populis-hjw7D5 {
+    background-color: transparent;
+    color: var(--bright-gray);
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: calc(50.00% - 2px);
+    letter-spacing: 3.84px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: calc(50.00% - 6px);
+    width: auto;
+}
+
+.parlamento .silent-hjw7D5 {
+    background-color: transparent;
+    color: var(--bright-gray);
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: calc(50.00% - 92px);
+    letter-spacing: 3.84px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: calc(50.00% - 6px);
+    width: auto;
+}
+
+.parlamento .mask-group-ZXpo8m {
+    background-color: transparent;
+    height: 189px;
+    left: 191px;
+    position: absolute;
+    top: 372px;
+    width: 159px;
+}
+
+.parlamento .group-6821-ZXpo8m {
+    background-color: transparent;
+    height: 122px;
+    left: 203px;
+    position: absolute;
+    top: 380px;
+    width: 135px;
+}
+
+.parlamento .image-7-Q2pSCd {
+    background-color: transparent;
+    height: 90px;
+    left: 44px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    width: 45px;
+}
+
+.parlamento .sesses-plenrias-Q2pSCd {
+    background-color: transparent;
+    color: #3f4553;
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: calc(50.00% - 24px);
+    letter-spacing: 0.00px;
+    line-height: 21.6px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: calc(50.00% + 39px);
+    white-space: nowrap;
+    width: auto;
+}
+
+.parlamento .group-7-ZXpo8m {
+    background-color: transparent;
+    height: 306px;
+    left: 11px;
+    position: absolute;
+    top: 204px;
+    width: 159px;
+}
+
+.parlamento .rectangle-7-JqGsjZ {
+    background-color: transparent;
+    height: 306px;
+    left: 0px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 159px;
+}
+
+.parlamento .group-4-JqGsjZ {
+    background-color: transparent;
+    height: 17px;
+    left: 13px;
+    position: absolute;
+    top: 203px;
+    width: 135px;
+}
+
+.parlamento .crculos-eleitorais-VpxiOF {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.00px;
+    line-height: 17.3px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.parlamento .image-8-JqGsjZ {
+    background-color: transparent;
+    height: 124px;
+    left: 48px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 60px;
+    width: 63px;
+}
+
+.parlamento .group-6820-ZXpo8m {
+    background-color: transparent;
+    height: 44px;
+    left: 27px;
+    position: absolute;
+    top: 502px;
+    width: 134px;
+}
+
+.parlamento .how-to-meditate-GIHy4L {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-helveticaneue-bold);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 700;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.00px;
+    line-height: 24.3px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    width: 134px;
+}
+
+.parlamento .rectangle-7-ZXpo8m {
+    background-color: transparent;
+    height: 150px;
+    left: 191px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 204px;
+    width: 159px;
+}
+
+.parlamento .mask-group-NDgozu {
+    background-color: transparent;
+    height: 150px;
+    left: 191px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 204px;
+    width: 159px;
+}
+
+.parlamento .group-4-ZXpo8m {
+    background-color: transparent;
+    height: 24px;
+    left: calc(50.00% + 44px);
+    position: absolute;
+    top: 50.00%;
+    width: 95px;
+}
+
+.parlamento .deputados-m2kPzZ {
+    background-color: transparent;
+    color: #fdf9f3;
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: calc(50.00% - 101px);
+    letter-spacing: 0.00px;
+    line-height: 24.3px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: calc(50.00% - 44px);
+    white-space: nowrap;
+    width: auto;
+}
+
+.parlamento .rectangle-11-ZXpo8m {
+    background-color: var(--white);
+    box-shadow: 2px -5px 17px #54575c1a;
+    height: 101px;
+    left: -5px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 526px;
+    width: 372px;
+}
+
+.parlamento .line-1-NDgozu {
+    background-color: transparent;
+    height: 5px;
+    left: 117px;
+    position: absolute;
+    top: 612px;
+    width: 129px;
+}
+
+.parlamento .group-29-ZXpo8m {
+    background-color: transparent;
+    height: 61px;
+    left: 159px;
+    position: absolute;
+    top: 535px;
+    width: 43px;
+}
+
+.parlamento .rectangle-18-verNie {
+    background-color: #8e97fd;
+    border-radius: 18px;
+    height: 41px;
+    left: 0px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 41px;
+}
+
+.parlamento .incio-verNie {
+    background-color: transparent;
+    color: #8e97fd;
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: 5px;
+    letter-spacing: 0.00px;
+    line-height: 15.1px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 46px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.parlamento .vector-verNie {
+    background-color: transparent;
+    height: 32.88%;
+    left: 24.19%;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 16.25%;
+    width: 45.00%;
+}
+
+.parlamento .group-19-ZXpo8m {
+    background-color: transparent;
+    height: 85px;
+    left: 13px;
+    position: absolute;
+    top: 101px;
+    width: 336px;
+}
+
+.parlamento .rectangle-7-53HTpU {
+    background-color: #f1ddcf;
+    border-radius: 10px;
+    height: 85px;
+    left: 0px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 336px;
+}
+
+.parlamento .mask-group-53HTpU {
+    background-color: transparent;
+    height: 86px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 336px;
+}
+
+.parlamento .group-3-53HTpU {
+    background-color: transparent;
+    height: 17px;
+    left: 27px;
+    position: absolute;
+    top: 24px;
+    width: 176px;
+}
+
+.parlamento .o-parlamento-v7c635 {
+    background-color: transparent;
+    color: var(--bright-gray);
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.00px;
+    line-height: 19.5px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: 176px;
+}
+
+.parlamento .group-6790-53HTpU {
+    background-color: transparent;
+    height: 72px;
+    left: calc(50.00% + 67px);
+    position: absolute;
+    top: 5px;
+    width: 76px;
+}
+
+.parlamento .group-18-x9RRCQ {
+    background-color: transparent;
+    height: 72px;
+    left: calc(50.00% - 38px);
+    position: absolute;
+    top: calc(50.00% - 36px);
+    width: 76px;
+}
+
+.parlamento .image-2-x9RRCQ {
+    background-color: transparent;
+    height: 38px;
+    left: calc(50.00% - 22px);
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 16px;
+    width: 44px;
+}

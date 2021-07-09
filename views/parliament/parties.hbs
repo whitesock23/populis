@@ -27,22 +27,19 @@
   <input type="hidden" id="anPageName" name="page" value="empty-background" />
   <div class="empty-background screen">
     <img class="group-6800-kV0Jby" src="/images/group-6800@2x.png" />
-    <a href="/deputies-locations"><img id="q9" data-name="Frame 6779" src="/images/login/Frame_6779.png" alt="Frame 6779" class="q9"></a>
+    <a href="/menu"><img id="q9" data-name="Frame 6779" src="/images/login/Frame_6779.png" alt="Frame 6779" class="q9"></a>
     <div class="group-6801-kV0Jby">
       <img class="logo-1-2ouVfe" src="/images/logo-1@2x.png" />
       <div class="populis-2ouVfe">POPULIS</div>
       <div class="silent-2ouVfe">VOX</div>
-      {{#each deputies}}
+      {{#each parties}}
       <div class="col">
         <div class="card h-100-deputies">
           <div class="card-body">
-            <h5 class="card-title">Nome: {{depNomeCompleto}}</h5>
-            {{#each depGP.0.DadosSituacaoGP}}
-            <p class="card-text">Partido: {{partido}}</p>
-            {{/each}}
+            <p class="card-text">Sigla: {{sigla}}</p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Circulo Eleitoral: {{circulo}}</small>
+            <small class="text-muted">Nome: {{nome}}</small>
           </div>
         </div>
       </div>

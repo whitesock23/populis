@@ -13,6 +13,22 @@
     width: 100%;
 }
 
+.btn-group {
+    top: 100px;
+}
+
+.q9 {
+    position: relative;
+    z-index: 18;
+    pointer-events: auto;
+    margin-left: 78.48px;
+    width: 37.52px;
+    height: 37.52px;
+    margin-top: 24px;
+    margin-bottom: 575.48px;
+    min-height: 37.52px;
+}
+
 .form_poll {
     background-color: transparent;
     height: 50.66%;
