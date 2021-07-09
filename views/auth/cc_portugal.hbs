@@ -12,7 +12,9 @@
 
 {{#if errorMessage}}
 
-<p>{{errorMessage}}</p>
+<div class="alert alert-danger" role="alert">
+  O seu número é inválido, por favor tente de novo! Deverá ter formato DDDDDDDD C AAT
+</div>
 
 {{/if}}
 
@@ -62,7 +64,7 @@
                                 <div id="q13" data-name="Frame 6873" class="q13">
                                     <div class="outer_q14">
                                         <div id="q14" data-name="introduza o nº." class="q14">
-                                            <input class="element" type="text" name="cartCid" key="0">introduza o nº.</input>
+                                            <input class="element cc_enter" onfocus="this.value=''" value="introduza o nº. em formato: DDDDDDDD C AAT" type="text" name="cartCid" key="0"></input>
                                         </div>
                                     </div>
                                 </div>
@@ -81,7 +83,7 @@
                     </form>
           <div class="outer_q18">
             <div id="q18" data-name="REGRESSE AO ECRÃ PRINCIPAL AQUI" class="q18"><span class="q18-1">REGRESSE AO ECRÃ
-                PRINCIPAL</span><span class="q18-2"> </span><span class="q18-3">AQUI</span> </div>
+                PRINCIPAL</span><span class="q18-2"> </span><span class="q18-3"><a href="/"> AQUI</a></span> </div>
           </div>
         </div>
       </div>

@@ -1,11 +1,6 @@
 {{#each deputies.Legislatura.Deputados.pt_ar_wsgode_objectos_DadosDeputadoSearch}}
 <div class="col">
   <div class="card h-100">
-    {{#if image_url}}
-    <img src="{{image_url}}" class="card-img-top" alt="..."/>
-    {{else}}
-    <img class="card-img-hidden" src="{{image_url}}" class="card-img-top" alt="..."/>
-    {{/if}}
     <div class="card-body">
       <h5 class="card-title">Nome: {{depNomeCompleto}}</h5>
       <p class="card-text">Partido: {{depGP.pt_ar_wsgode_objectos_DadosSituacaoGP.gpSigla}}</p>

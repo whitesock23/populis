@@ -19,23 +19,6 @@
          <div class="col-sm-2"></div>
          <div class="col-sm-8 mobile-frame">
             {{{body}}}
-      <a href="/menu">Book List</a>
-    {{#if loggedInUser}}
-      <a href="/polls">Create book</a>
-    {{/if}}
-{{!--     <a href="/create-author">Create author</a>
- --}}    <a href="/signup">Signup</a>
-
-    {{#if loggedInUser}}
-      Welcome
-      {{loggedInUser}}
-      <form action="/logout" method="POST">
-        <button type="submit">Logout</button>
-      </form>
-    {{else}}
-      <a href="/login">Login</a>
-    {{/if}}
-
          </div>
          <div class="col-sm-2"></div>
       </div>

@@ -13,20 +13,6 @@ router.get("/signup", (req, res) => {
 router.post("/signup", async(req, res) => {
     const { username, email, password } = req.body;
 
-    //check cartão de cidadão
-    // try {
-    //     IdValidator = `https://angolaapi.herokuapp.com/api/v1/validate/bi/${cc}`
-    //     const responseFromApi = await axios.get(IdValidator);
-    //     //const deputies = response.data;
-
-    // } catch (e) {
-    //     console.log(e);
-    //     res.render("auth/signup", { errorMessage: "Please add a valid ID" });
-    //     return;
-    // }
-
-
-
     //check if username and password are filled in
     if (username === "" || password === "") {
         res.render("auth/signup", { errorMessage: "Fill username and password" });
@@ -42,11 +28,11 @@ router.post("/signup", async(req, res) => {
         return;
     }
 
-/*     if (user === CurrentLoggedUser){
-        return
-    } else {
-        res.render('auth/signup')
-    } */
+    /*     if (user === CurrentLoggedUser){
+            return
+        } else {
+            res.render('auth/signup')
+        } */
 
     //check if username already exists
     const user = await User.findOne({ username });
@@ -141,9 +127,9 @@ router.post("/cc_angola", async(req, res) => {
         IdValidator = `https://angolaapi.herokuapp.com/api/v1/validate/bi/${cc}`
         const responseFromApi = await axios.get(IdValidator);
         res.redirect("/signup")
-        //console.log('is valid')
-        //const deputies = response.data;
-        
+            //console.log('is valid')
+            //const deputies = response.data;
+
     } catch (e) {
         console.log(e);
         res.render("index", { errorMessage: "Please add a valid ID" });
