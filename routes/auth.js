@@ -112,19 +112,22 @@ router.get("/cc_portugal", (req, res) => {
     res.render("auth/cc_portugal", { layout: false });
 });
 
+
+
 router.post("/cc_portugal", async(req, res) => {
     const { cartCid } = req.body;
-    console.log('cc:', cartCid)
+    console.log('cc:', cartCid);
+  
     
     if (cc.validate(`${cartCid}`)) {
+        res.render("parliament/polls", { GoodMessage: "O seu número é válido" }); 
         console.log('is valid');
-         res.render("parliament/polls", { GoodMessage: "O seu número é válido" }); 
-        
     } else {
         res.render("auth/cc_portugal", { errorMessage: "O seu número é inválido, verifique" });
-        
         console.log('not valid'); 
+       
     };
+
 });
 
 // Validate CC Angola
