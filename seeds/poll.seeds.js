@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Poll = require('../models/Voting.model.js');
 
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://ironhack:admin@cluster0.1avs1.mongodb.net/populis?retryWrites=true&w=majority";
+const MONGODB_URI = process.env.MONGODB_URI;
 
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
