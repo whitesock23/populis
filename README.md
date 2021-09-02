@@ -1,10 +1,11 @@
 # Populis
 
 Project made with HandleBars to showing a prototype of a future voting app.
+* Javascript - HTML - CSS
 
 ## API's
 
-In order to be use the polling vote you need to have a valid Portuguese ID Card which is validated by API - 
+In order to be use the polling vote you need to have a valid Portuguese ID Card which is validated by API - https://www.npmjs.com/package/pt-id
 
 Parliament - https://app.parlamento.pt/webutils/docs/
 
@@ -12,14 +13,14 @@ Parliament - https://app.parlamento.pt/webutils/docs/
 * Node.js
 * HandleBars
 * Express.js
-* Javascript
-* HTML
-* CSS
 * Axios
+* Mongoose
 
+## Other usages
+* Postman
 
+##
 Enjoy and don't be shy to raise an issue
 
-<Happy coding>.
-
+##
 Always support and advocate for equality :two_men_holding_hands: and diversity :man_with_turban: :older_woman: of all human beings in every context, and protect our animals :honeybee: and the planet :earth_americas: :herb:.
