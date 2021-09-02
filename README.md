@@ -5,7 +5,7 @@ Project made with HandleBars to showing a prototype of a future voting app.
 
 ## Deployment
 
-Heroku - https://populis.herokuapp.com/
+Heroku - https://populis.pt/
 
 ## API's
 
